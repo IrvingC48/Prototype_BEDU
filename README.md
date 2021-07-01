@@ -14,12 +14,13 @@
 
 ## Contexto
 
-En el año 2020, comenzó la emergencia sanitaria mundial debido al virus COVID-19, por lo que varios países adoptaron medidas sanitarias preventivas, siendo una de ellas los cierres de emergencia, donde cesaron gran parte de las actividades económicas. Debido a esta medida en algunos países como Corea del Sur, China y Brasil, se presentaron cambios locales a corto plazo en la calidad del aire, especialmente en las concentraciones de las partículas suspendidas de 2.5 y 10 𝜇g ( ![PM2.5] y ![PM10] ).
+En México 20 ciudades sufren de altos niveles de contaminación atmosférica [2](https://valor-compartido.com/monterrey-toluca-y-salamanca-las-ciudades-mas-contaminadas-de-mexico.), debido a esto, en 2019, la cantidad de personas que murió prematuramente en México por problemas relacionados a la calidad del aire excedió a los 48 mil habitantes Antes esta problemática, este repositorio contiene una propuesta para la creación de un sistema de alerta temprana, que pretende ser una herramienta para alertar oportunamente sobre los posibles riesgos en contaminación del aire. En este caso, nos enfocaremos en la calidad del aire asociada a las partículas suspendidas de 2.5 𝜇g ( ![PM2.5] ).
 
+Se utilizaron datos de 2016 a 2019 de las estaciones de monitoreo atmosférico de la Zona Metropolitana del Valle de México para ajustar un modelo de machine learning que pudiera ser capaz de predecir la concentración de ![PM2.5] acorde a variables meteorológicas (temperatura, humedad relativa, velocidad del viento) y variables temporales (días julianos y día de la semana). Además, se determinó el Índice de Calidad del Aire (AQI, por sus siglas en inglés) de esta asociada a dicha concentración y que servirá como indicador para alertar a la población.
 
-Nuestro objetivo es evaluar los efectos que este aislamiento social provocó en la concentración de estas partículas en la Zona Metropolitana del Valle de México, comparando los datos registrados en 2019 y 2020.
+Como prototipo, se utilizó este modelo para alimentar una aplicación que permite al usuario ver el índice de calidad del aire en la ZMVM acorde a los días seleccionados.
 
-En este repositorio se presentan todos los procedimientos aplicados desde la búsqueda de estimados de locacíón y variabilidad, exploración de variables categóricas, correlación y regresión lineal, distribuciones muestreales y técnicas de evaluación de modelos y visualización de datos avanzada.
+En este repositorio se presentan todos los procedimientos aplicados desde la conformación de la base de datos, búsqueda de estimados de locacíón y variabilidad, exploración de variables categóricas, ajuste del modelo de machine learning, elaboración de gráficas  y elaboración de la aplicación.
 
 Si deseas consultar el antecedente de estos procesos, puedes consultarlo [aquí](https://github.com/IrvingC48/BeduFase3-Proyecto_python)
 
